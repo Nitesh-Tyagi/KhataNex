@@ -1,0 +1,213 @@
+@font-face {
+    font-family: Jost;
+    src: url(Jost-Regular.ttf);
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Jost;
+
+	background-color: #F9B9BA;
+}
+
+#pic-container {
+	width: 100%; 
+	overflow: hidden;
+}
+
+#pig-container {
+	background-color: #9B9B9B;
+	height: 38vh;
+	width: 160%;
+	left:-30%;
+
+	position: relative;
+  	overflow: hidden;
+	text-align: center;
+	padding-top: 10vh;
+/*	padding-bottom: 1vh;*/
+
+	border-bottom-left-radius:50%;
+    border-bottom-right-radius:50%;
+}
+
+#pig {
+	height: 55vw;
+	width: 55vw;
+
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
+}
+
+#login-container {
+/*	background-color: yellow;*/
+
+	display: flex;
+  	justify-content: center;
+
+  	margin: 20px;
+/*  	padding: 10px;*/
+
+  	font-size: 20px;
+  	color: #424242;
+}
+
+#login-form {
+	text-align: center;
+	font-size: 20px;
+  	color: #424242;
+}
+
+.field {
+	height: 42px;
+	width: 80vw;
+	max-width: 500px;
+	border-radius: 30px;
+	margin: 8px;
+/*	padding: 5px;*/
+
+	font-size: 24px;
+  	color: #F9B9BA;
+
+  	text-align: center;
+
+  	border: solid;
+  	border-width: 6px;
+
+  	background-color: #FD9C9C;
+  	border-color: #EBC1C1;
+
+  	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
+  	transition: all 1s;
+}
+
+.field:focus {
+  	border-color: #FD9C9C;
+  	color: #EBC1C1;
+}
+
+#submit {
+	background-color: #9B9B9B;
+	border-color: #B1B1B1;
+	color: #424242;
+	
+	width: 82vw;
+	height: 60px;
+	transition: all 1s;
+}
+
+#submit:hover {
+	border-color: #9B9B9B;
+}
+
+::placeholder {
+	color: #F9B9BA;
+}
+
+*:focus {
+    outline: none;
+}
+
+@media only screen and (max-height: 768px) and (max-width: 992px) and (min-aspect-ratio: 1/1) {
+  	body {
+  		height: 100%; 
+		overflow: hidden;
+  	}
+  	#pic-container {
+		height: 100%; 
+		overflow: hidden;
+	}
+
+  	#pig-container {
+		height: 160vh;
+		width: 38vw;
+		top: -30vh;
+		left: 0;
+
+		position: fixed;
+		padding-right: 10vh;
+		padding-left: 1vh;
+
+		border-radius: 0px 50% 50% 0px;
+	}
+
+	#pig {
+		margin-top: 45vh;
+		height: 55vh;
+		width: 55vh;
+	}
+
+	#login-container {
+		position: fixed;
+		width: 55vw;
+		left: 45vw;
+
+		margin-top: 25px;
+	}
+
+	.field {
+		height: 40px;
+		width: 40vw;
+		max-width: 500px;
+		border-radius: 30px;
+		margin-top: 12px;
+		margin-bottom: 12px;
+
+		font-size: 24px;
+	}
+
+	#submit {
+		width: 42vw;
+		height: 58px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+  	#pic-container {
+		height: 100vh; 
+		width: 50vw;
+		overflow: hidden;
+		position: fixed;
+	}
+
+  	#pig-container {
+		height: 40vh;
+		width: 40vh;
+		top: 25vh;
+		left: 25vh;
+
+		position: fixed;
+		padding-right: 5vh;
+		padding-left: 5vh;
+
+		border-radius: 15%;
+	}
+
+	#pig {
+		height: 30vh;
+		width: 30vh;
+	}
+
+	#login-container {
+		position: fixed;
+		width: 30vw;
+		left: 50vw;
+
+		margin-top: 30vh;
+	}
+
+	.field {
+		height: 40px;
+		width: 32vw;
+		border-radius: 30px;
+		margin-top: 12px;
+		margin-bottom: 12px;
+
+		font-size: 24px;
+	}
+
+	#submit {
+		width: 34vw;
+		height: 56px;
+	}
+}
